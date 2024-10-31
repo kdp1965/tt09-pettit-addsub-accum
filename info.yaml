@@ -1,6 +1,6 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
-  wokwi_id:     0       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  wokwi_id:     412635532198550529       # Set this to the ID of your Wokwi project (the number from the project's URL)
   title:        "tt09-full-adder"      # Project title
   author:       "Ken Pettit"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
