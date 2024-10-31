@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This is a simple 4-bit adder that adds a + b.  It outputs the 4-bit sum plus all intermediate carry bits.
 
 ## How to test
 
-Explain how to use your project
+Simply supply 4-bit input on a[3:0] and b[3:0] and observe the sum on s[3:0] and carry outputs.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Dip switches and LEDs.
