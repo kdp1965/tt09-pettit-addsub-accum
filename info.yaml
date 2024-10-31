@@ -1,10 +1,10 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     0       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        ""      # Project title
-  author:       ""      # Your name
+  title:        "tt09-full-adder"      # Project title
+  author:       "Ken Pettit"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "A 4-bit full adder"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -15,34 +15,34 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "a[0]"
+  ui[1]: "a[1]"
+  ui[2]: "a[2]"
+  ui[3]: "a[3]"
+  ui[4]: "b[0]"
+  ui[5]: "b[1]"
+  ui[6]: "b[2]"
+  ui[7]: "b[3]"
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "s[0]"
+  uo[1]: "s[1]"
+  uo[2]: "s[2]"
+  uo[3]: "s[3]"
+  uo[4]: "c[0]"
+  uo[5]: "c[1]"
+  uo[6]: "c[2]"
+  uo[7]: "c[3]"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "na"
+  uio[1]: "na"
+  uio[2]: "na"
+  uio[3]: "na"
+  uio[4]: "na"
+  uio[5]: "na"
+  uio[6]: "na"
+  uio[7]: "na"
 
 # Do not change!
 yaml_version: 6
