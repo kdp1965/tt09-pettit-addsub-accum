@@ -36,8 +36,8 @@ pinout:
 
   # Bidirectional pins
   uio[0]: "add/sub"
-  uio[1]: "clear/accum"
-  uio[2]: "na"
+  uio[1]: "clear/operate"
+  uio[2]: "accum"
   uio[3]: "na"
   uio[4]: "na"
   uio[5]: "na"
