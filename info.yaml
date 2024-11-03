@@ -39,7 +39,7 @@ pinout:
   uio[1]: "clear/operate"
   uio[2]: "accum"
   uio[3]: "digit_select"
-  uio[4]: ""
+  uio[4]: "auto_digit"
   uio[5]: ""
   uio[6]: ""
   uio[7]: "carry_out"
