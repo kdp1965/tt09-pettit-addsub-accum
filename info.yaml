@@ -25,24 +25,24 @@ pinout:
   ui[7]: "a[7]"
 
   # Outputs
-  uo[0]: "s[0]"
-  uo[1]: "s[1]"
-  uo[2]: "s[2]"
-  uo[3]: "s[3]"
-  uo[4]: "s[0]"
-  uo[5]: "s[1]"
-  uo[6]: "s[2]"
-  uo[7]: "s[3]"
+  uo[0]: "seg_a"
+  uo[1]: "seg_b"
+  uo[2]: "seg_c"
+  uo[3]: "seg_d"
+  uo[4]: "seg_e"
+  uo[5]: "seg_f"
+  uo[6]: "seg_g"
+  uo[7]: "seg_dp"
 
   # Bidirectional pins
   uio[0]: "add/sub"
   uio[1]: "clear/operate"
   uio[2]: "accum"
-  uio[3]: "carry_out"
+  uio[3]: "digit_select"
   uio[4]: ""
   uio[5]: ""
   uio[6]: ""
-  uio[7]: ""
+  uio[7]: "carry_out"
 
 # Do not change!
 yaml_version: 6
