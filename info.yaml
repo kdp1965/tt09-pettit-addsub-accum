@@ -36,8 +36,8 @@ pinout:
 
   # Bidirectional pins
   uio[0]: "add/sub"
-  uio[1]: "clear/operate"
-  uio[2]: "accum"
+  uio[1]: "accumulate/load"
+  uio[2]: "execute"
   uio[3]: "digit_select"
   uio[4]: "auto_digit"
   uio[5]: ""
