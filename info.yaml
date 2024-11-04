@@ -15,14 +15,14 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "a[0]"
-  ui[1]: "a[1]"
-  ui[2]: "a[2]"
-  ui[3]: "a[3]"
-  ui[4]: "a[4]"
-  ui[5]: "a[5]"
-  ui[6]: "a[6]"
-  ui[7]: "a[7]"
+  ui[0]: "op/imm[0]"
+  ui[1]: "op/imm[1]"
+  ui[2]: "op/imm[2]"
+  ui[3]: "op/imm[3]"
+  ui[4]: "op/imm[4]"
+  ui[5]: "op/imm[5]"
+  ui[6]: "op/imm[6]"
+  ui[7]: "op/imm[7]"
 
   # Outputs
   uo[0]: "seg_a"
@@ -35,14 +35,14 @@ pinout:
   uo[7]: "seg_dp"
 
   # Bidirectional pins
-  uio[0]: "add/sub"
-  uio[1]: "accumulate/load"
-  uio[2]: "execute"
+  uio[0]: "load_opcode"
+  uio[1]: ""
+  uio[2]: "execute_opcode"
   uio[3]: "digit_select"
   uio[4]: "auto_digit"
-  uio[5]: "load_opcode"
+  uio[5]: ""
   uio[6]: ""
-  uio[7]: "carry_out"
+  uio[7]: ""
 
 # Do not change!
 yaml_version: 6
