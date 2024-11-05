@@ -37,10 +37,10 @@ pinout:
   # Bidirectional pins
   uio[0]: "load_opcode"
   uio[1]: "execute_opcode"
-  uio[2]: "digit_select"
-  uio[3]: "manual_digit"
-  uio[4]: "digit_a_reg"
-  uio[5]: ""
+  uio[2]: "sevenSeg_binary"
+  uio[3]: "digit_select"
+  uio[4]: "manual_digit"
+  uio[5]: "digit_a_reg"
   uio[6]: ""
   uio[7]: ""
 
