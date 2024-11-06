@@ -41,7 +41,7 @@ pinout:
   uio[3]: "digit_select"
   uio[4]: "manual_digit"
   uio[5]: "digit_a_reg"
-  uio[6]: ""
+  uio[6]: "carry_out"
   uio[7]: ""
 
 # Do not change!
