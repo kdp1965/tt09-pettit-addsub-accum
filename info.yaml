@@ -42,7 +42,7 @@ pinout:
   uio[4]: "manual_digit"
   uio[5]: "digit_a_reg"
   uio[6]: "carry_out"
-  uio[7]: ""
+  uio[7]: "zero_out"
 
 # Do not change!
 yaml_version: 6
