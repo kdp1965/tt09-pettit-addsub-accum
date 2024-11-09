@@ -10,10 +10,10 @@ You can also include images in this folder and reference them in the markdown. E
 ## What is WocProc Trainer?
 
 WocProc Trainer is a partial CPU implementation coded entirely in Wokwi!  While it is
-not a fully functional CPU capable of fetching it's own instructions and running code,
-it does provide the ALU, registers and instruction deocde for performaing CPU operations
-when you manually "feed" it instructions.  Turning it into a fully Turing CPU would
-require addition of a Program Counter (PC), execution state machine, program control
+not a fully functional CPU capable of fetching instructions and running code,
+it does provide the ALU, registers and opcode deocde for performaing CPU operations
+when you "feed" it instructions.  Turning it into a full CPU would
+require addition of a Program Counter (PC), execution state machine, flow control
 opcodes (jump, call, return, conditional branches, etc.), and an interface for fetching
 opcodes.
 
