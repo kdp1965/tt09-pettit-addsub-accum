@@ -61,8 +61,8 @@ The WokProc has an 8-bit accumulator and 4 8-bit working registers and can perfo
   8.  Perform a NOT operation on the A register by loading and executing opcode 7'0111_0001.  The 7-Seg should show the compliment
       value of what was in A.
 
-  9.  Try additional oerations from the opcode table by loading them and then executing them.  For any opcode that uses IMMediate data,
-      the uio_in[7:0] inputs must be changed to the immediate data AFTER loading the opcode but BEFORE executing it.
+  9.  Try additional oerations from the opcode table by loading and executing them.  For any opcode that uses IMM data,
+      uio_in[7:0] inputs must be changed to the immediate data AFTER loading the opcode but BEFORE executing it.
 
 ## Opcodes supported:
 
