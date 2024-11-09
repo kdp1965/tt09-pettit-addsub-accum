@@ -18,7 +18,9 @@ opcodes (jump, call, return, conditional branches, etc.), and an interface for f
 opcodes.
 
 The following is a block diagram of the WocProc Trainer:
+
 ![](block_diag.png)
+
 ## How it works
 
 It works by "feeding" it opcodes and data via the ui[7:0] and ui[0] input pins and then executing them by toggling the uio[1] input pin.  Some instructions require additional "Immediate Data" to be supplied
@@ -57,8 +59,8 @@ The WokProc has an 8-bit accumulator and 4 8-bit working registers and can perfo
       Now load and execute the opcode to load register r0 to Acc (opcode 7'b0110_0000).  The 7-Seg should show the result of the summation
       that was stored in r0.
 
-  8.  Perform a NOT operation on the Acc register by loading and executing opcode 7'0111_0001.  The 7-Seg should show the 1's compliment
-      value of what was in Acc.
+  8.  Perform a NOT operation on the A register by loading and executing opcode 7'0111_0001.  The 7-Seg should show the compliment
+      value of what was in A.
 
   9.  Try additional oerations from the opcode table by loading them and then executing them.  For any opcode that uses IMMediate data,
       the uio_in[7:0] inputs must be changed to the immediate data AFTER loading the opcode but BEFORE executing it.
