@@ -18,9 +18,7 @@ opcodes (jump, call, return, conditional branches, etc.), and an interface for f
 opcodes.
 
 The following is a block diagram of the WocProc Trainer:
-
 ![](block_diag.png)
-
 ## How it works
 
 It works by "feeding" it opcodes and data via the ui[7:0] and ui[0] input pins and then executing them by toggling the uio[1] input pin.  Some instructions require additional "Immediate Data" to be supplied
@@ -67,38 +65,38 @@ The WokProc has an 8-bit accumulator and 4 8-bit working registers and can perfo
 
 ## Opcodes supported:
 
- | Opcode    | Operation                |
- | --------- | ------------------------ |
- | 0000_0000 | A <= A + IMM             |
- | 0000_1000 | A <= A + IMM + Carry     |
- | 0001_0000 | A <= A - IMM             |
- | 0001_1000 | A <= A - IMM - Borrow    |
- | 0010_00rr | A <= A + R[1:0]          |
- | 0010_10rr | A <= A + R[1:0] + Carry  |
- | 0011_00rr | A <= A - R[1:0]          |
- | 0011_10rr | A <= A - R[1:0] - Borrow |
- | 0100_0000 | A <= IMM                 |
- | 0110_00rr | A <= R[1:0]              |
- | 0110_01rr | A <= A ^ R[1:0]          |
- | 0110_10rr | A <= A | R[1:0]          |
- | 0110_11rr | A <= A & R[1:0]          |
- | 0111_0000 | A <= Zero                |
- | 0111_0001 | A <= !A                  |
- | 0111_01rr | A <= !R[1:0]             |
- | 0111_1000 | Cy <= 0                  |
- | 0111_1001 | Cy <= !Cy                |
- | 0111_1010 | {A, Cy} <= {Cy, A}       |
- | 0111_1011 | {Cy, A} <= {A, Cy}       |
- | 0111_1100 | A <= {0, A[7:1]}         |
- | 0111_1101 | A <= {A[6:0], 0}         |
- | 0111_1110 | A <= {A[7], A[7:1]}      |
- | 1000_00rr | R[1:0] <= A + IMM        |
- | 1001_00rr | R[1:0] <= A - IMM        |
- | 1010_00rr | R[1:0] <= A + R[1:0]     |
- | 1011_00rr | R[1:0] <= A - R[1:0]     |
- | 1100_00rr | R[1:0] <= IMM            |
- | 1101_00rr | R[1:0] <= A              |
- | 1110_RRrr | R[1:0] <= R[3:2]         |
+ | Opcode    | Operation                | Description                      |
+ | --------- | ------------------------ | -------------------------------- |
+ | 0000_0000 | A <= A + IMM             | Add A + immediate data           |
+ | 0000_1000 | A <= A + IMM + Carry     | Add with carry A + immediate     |
+ | 0001_0000 | A <= A - IMM             | Subtract immediate from A        |
+ | 0001_1000 | A <= A - IMM - Borrow    | Subtract with borrow immediate   |
+ | 0010_00rr | A <= A + R[1:0]          | Add register rr to A             |
+ | 0010_10rr | A <= A + R[1:0] + Carry  | Add with carry register rr       |
+ | 0011_00rr | A <= A - R[1:0]          | Subtract register rr from A      |
+ | 0011_10rr | A <= A - R[1:0] - Borrow | Subtract with borrow register rr |
+ | 0100_0000 | A <= IMM                 | Load A with immediate data       |
+ | 0110_00rr | A <= R[1:0]              | Load A from register rr          |
+ | 0110_01rr | A <= A ^ R[1:0]          | XOR A with register rr           |
+ | 0110_10rr | A <= A OR R[1:0]         | OR A with register rr            |
+ | 0110_11rr | A <= A & R[1:0]          | AND A with register rr           |
+ | 0111_0000 | A <= Zero                | Clear A                          |
+ | 0111_0001 | A <= !A                  | Invert (1's compliment) A`       |
+ | 0111_01rr | A <= !R[1:0]             | Load A from rr compliment        |
+ | 0111_1000 | Cy <= 0                  | Clear the carry flag             |
+ | 0111_1001 | Cy <= !Cy                | Compliment the carry flag        |
+ | 0111_1010 | {A, Cy} <= {Cy, A}       | Shift right A through Carry      |
+ | 0111_1011 | {Cy, A} <= {A, Cy}       | Shift left A through Carry       |
+ | 0111_1100 | A <= {0, A[7:1]}         | Shift right A                    |
+ | 0111_1101 | A <= {A[6:0], 0}         | Shift left A                     |
+ | 0111_1110 | A <= {A[7], A[7:1]}      | Signed shift right A             |
+ | 1000_00rr | R[1:0] <= A + IMM        | Load register rr with sum        |
+ | 1001_00rr | R[1:0] <= A - IMM        | Load register rr with difference |
+ | 1010_00rr | R[1:0] <= A + R[1:0]     | Load register rr with sum        |
+ | 1011_00rr | R[1:0] <= A - R[1:0]     | Load register rr with difference |
+ | 1100_00rr | R[1:0] <= IMM            | Load immediate data to rr        |
+ | 1101_00rr | R[1:0] <= A              | Load A to rr                     |
+ | 1110_RRrr | R[1:0] <= R[3:2]         | Copy register RR to rr           |
 
 ## Hardware needed:
 
