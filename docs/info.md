@@ -51,9 +51,9 @@ The WokProc has an 8-bit accumulator and 4 8-bit working registers and can perfo
   5.  The first addition just looked like a 'load' since Acc was zero from the reset.  Add the value a second time (or supply a different
       value on ui_in[7:0]) and toggle the EXECUTE input again.  The 7-Segment display should show the result of the addiiton.
 
-  6.  Load register r0 from the Acc register.  First enter the opcode (7'b1100_0000 from the opcode table) and then toggle the LOAD
+  6.  Load register r0 from the A register.  First enter the opcode (7'b1100_0000 from the opcode table) and then toggle the LOAD
       (ui_in[0]) input HIGH then LOW to load ui_in[7:] to the opcode register.  Now toggle the EXECUTE (ui_in[1]) input HIGH then LOW.
-      Register r0 should now contain the value from Acc.
+      Register r0 should now contain the value from A.
 
   7.  Test if register r0 was loaded.  First clear the Acc register (load opcode 7'b0111_0000 and EXECUTE it).  The 7-Seg should show "00.".
       Now load and execute the opcode to load register r0 to Acc (opcode 7'b0110_0000).  The 7-Seg should show the result of the summation
