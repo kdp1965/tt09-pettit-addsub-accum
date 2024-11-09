@@ -31,14 +31,13 @@ The WokProc has an 8-bit accumulator and 4 8-bit working registers and can perfo
 ## How to test
 
   1. Provide a 10KHz clock then issue rst_n pulse.  
-  2. Select the desired output mode for viewing results:
+  2. Select the desired output mode for viewing results.  For this testing, set uio_in[5:2] all LOW.
      
      uio_in[2]: Selects 7-Segment (LOW) or binary (HIGH) output format
      uio_in[4]: Selects auto nibble / digit display (LOW) or manual (HIGH)
      uio_in[3]: Manual digit select when uio_in[4] is HIGH. 
      uio_in[5]: Selects value to output (LOW = ACC reg, HIGH = new ACC load value) 
 
-     For this testing, set uio_in[5:2] all LOW.
 
   3.  Monitor the results using the 7-Seg display and uio_out[7:6] bits:
 
