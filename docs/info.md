@@ -17,8 +17,6 @@ require addition of a Program Counter (PC), execution state machine, program con
 opcodes (jump, call, return, conditional branches, etc.), and an interface for fetching
 opcodes.
 
-The following is a block diagram of the WocProc Trainer:
-
 ![](block_diag.png)
 
 ## How it works
